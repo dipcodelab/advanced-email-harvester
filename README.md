@@ -109,9 +109,9 @@ Whether you're conducting market research, building contact databases, or perfor
 ### Prerequisites
 
 Before installing, ensure you have:
-- **Python 3.8+** or **Node.js 14+** (depending on implementation)
+- **Runtime Environment**: Check the repository for the specific implementation language and version requirements
 - **Git** for cloning the repository
-- **4GB+ RAM** for large-scale operations
+- **4GB+ RAM** recommended for large-scale operations
 - **Stable internet connection** for web-based harvesting
 
 ### Method 1: Install from Source
@@ -123,26 +123,33 @@ git clone https://github.com/dipcodelab/advanced-email-harvester.git
 # Navigate to the project directory
 cd advanced-email-harvester
 
-# Install dependencies (Python example)
+# Install dependencies (check repository for specific instructions)
+# Example for Python:
 pip install -r requirements.txt
 
-# Or for Node.js
+# Example for Node.js:
 npm install
 ```
 
 ### Method 2: Using Package Manager
 
 ```bash
-# Python (PyPI)
+# Example: If published to package registries
+# Check repository for actual package availability
+
+# Python (PyPI) - if available
 pip install advanced-email-harvester
 
-# Node.js (npm)
+# Node.js (npm) - if available
 npm install -g advanced-email-harvester
 ```
 
 ### Method 3: Docker
 
 ```bash
+# Example: If published to Docker Hub
+# Check repository for actual Docker image availability
+
 # Pull the Docker image
 docker pull dipcodelab/advanced-email-harvester:latest
 
@@ -382,16 +389,18 @@ Collect contact information for research participants, expert interviews, and su
 
 ## 📊 Performance Benchmarks
 
-### Processing Speed
+### Expected Processing Speed
 
-| Dataset Size | Depth | Time | Throughput |
+*Note: These are estimated performance targets. Actual results will vary based on hardware, data characteristics, and configuration.*
+
+| Dataset Size | Depth | Estimated Time | Target Throughput |
 |-------------|-------|------|------------|
 | 10,000 files | 5 levels | 2 minutes | 5,000/min |
 | 100,000 files | 10 levels | 15 minutes | 6,667/min |
 | 1,000,000 files | 20 levels | 2 hours | 8,333/min |
 | 10,000,000 files | 30 levels | 18 hours | 9,259/min |
 
-### Resource Usage
+### Expected Resource Usage
 
 | Operation | CPU | Memory | Disk I/O |
 |-----------|-----|--------|----------|
@@ -400,7 +409,7 @@ Collect contact information for research participants, expert interviews, and su
 | Medium (8 threads) | 40-60% | 500MB | 20 MB/s |
 | Heavy (16+ threads) | 80-95% | 1GB+ | 50+ MB/s |
 
-*Benchmarks performed on: Intel i7-9700K, 32GB RAM, NVMe SSD*
+*Example target environment: Modern multi-core processor (e.g., Intel i7 or equivalent), 32GB RAM, SSD storage*
 
 ---
 
